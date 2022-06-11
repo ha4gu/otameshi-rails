@@ -7,6 +7,7 @@ gem "bootsnap", require: false
 gem "mysql2"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6"
+gem "rails-i18n", "~> 6.0"
 gem "shakapacker"
 
 group :development do

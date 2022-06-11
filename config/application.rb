@@ -28,8 +28,15 @@ module OtameshiRails
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
-    #
+
+    # ロケールは日本語をデフォルトとし、訳文がなければ英語にフォールバックさせる
+    config.i18n.load_path += Dir[Rails.root.join("config/locales/**/*.yml")]
+    config.i18n.default_locale = :ja
+    config.i18n.fallbacks = [:en]
+
+    # タイムゾーンはJST (UTC+09:00)とする
     config.time_zone = "Tokyo"
+
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.generators do |g|
