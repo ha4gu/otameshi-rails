@@ -165,16 +165,15 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bootsnap (>= 1.4.4)
+  bootsnap
   byebug
-  mysql2 (~> 0.5)
+  mysql2
   puma (~> 5.0)
-  rack-mini-profiler (~> 2.0)
+  rack-mini-profiler
   rails (~> 6.1.6)
-  sass-rails (>= 6)
-  tzinfo-data
-  web-console (>= 4.1.0)
-  webpacker (~> 5.0)
+  sass-rails
+  web-console
+  webpacker
 
 RUBY VERSION
    ruby 3.0.4p208
