@@ -7,7 +7,7 @@ gem "bootsnap", require: false
 gem "mysql2"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6"
-gem "webpacker"
+gem "shakapacker"
 
 group :development do
   gem "rack-mini-profiler"
