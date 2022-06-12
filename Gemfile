@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.4"
 
+gem "acts_as_list"
 gem "bootsnap", require: false
 gem "image_processing"
 gem "mysql2"
