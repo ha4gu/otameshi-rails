@@ -39,4 +39,9 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  # 管理対象モデル
+  config.included_models = %w[
+    Facility
+  ]
 end
