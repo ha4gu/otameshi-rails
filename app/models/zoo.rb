@@ -1,17 +1,9 @@
-class Facility < ApplicationRecord
-  validates :name, presence: true
-
-  scope :only_aquarium, -> { where(type: "Aquarium") }
-  scope :only_zoo, -> { where(type: "Zoo") }
-
+class Zoo < Facility
   rails_admin do
     object_label_method :name
 
     list do
-      scopes [nil, :only_aquarium, :only_zoo]
-
       field :id
-      field :type
       field :name
       field :created_at
       field :updated_at

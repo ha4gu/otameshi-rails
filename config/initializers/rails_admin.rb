@@ -42,6 +42,6 @@ RailsAdmin.config do |config|
 
   # 管理対象モデル
   config.included_models = %w[
-    Facility
+    Facility Aquarium Zoo
   ]
 end
