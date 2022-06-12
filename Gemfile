@@ -13,6 +13,7 @@ gem "rails_admin-i18n"
 gem "shakapacker"
 
 group :development do
+  gem "annotate"
   gem "rack-mini-profiler"
   gem "web-console"
 end
