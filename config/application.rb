@@ -46,5 +46,8 @@ module OtameshiRails
       g.test_framework :rspec, controller_specs: false, request_specs: false, routing_specs: false, view_specs: false
       g.factory_bot suffix: "factory"
     end
+
+    # Active StorageのバリアントプロセッサはVipsとする
+    config.active_storage.variant_processor = :vips
   end
 end
