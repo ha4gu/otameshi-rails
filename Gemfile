@@ -8,6 +8,8 @@ gem "mysql2"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6"
 gem "rails-i18n", "~> 6.0"
+gem "rails_admin"
+gem "rails_admin-i18n"
 gem "shakapacker"
 
 group :development do
