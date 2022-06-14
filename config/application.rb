@@ -44,6 +44,7 @@ module OtameshiRails
       g.javascripts false
       g.stylesheets false
       g.test_framework :rspec, controller_specs: false, request_specs: false, routing_specs: false, view_specs: false
+      g.factory_bot suffix: "factory"
     end
   end
 end
