@@ -28,3 +28,7 @@ group :development, :test do
   gem "rubocop-rspec"
   gem "standard"
 end
+
+group :test do
+  gem "shoulda-matchers"
+end
