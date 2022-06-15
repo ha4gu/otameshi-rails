@@ -1,4 +1,8 @@
 class Facility < ApplicationRecord
+  has_many :ordered_images, -> { order(position: :asc) }, as: :imageable, dependent: :destroy, inverse_of: :imageable
+  accepts_nested_attributes_for :ordered_images
+  validates_associated :ordered_images
+
   validates :name, presence: true
 
   scope :only_aquarium, -> { where(type: "Aquarium") }
@@ -27,6 +31,7 @@ class Facility < ApplicationRecord
 
     edit do
       field :name, :string
+      field :ordered_images
     end
   end
 end

@@ -19,6 +19,7 @@ class Aquarium < Facility
 
     edit do
       field :name, :string
+      field :ordered_images
     end
   end
 end

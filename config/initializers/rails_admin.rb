@@ -43,5 +43,6 @@ RailsAdmin.config do |config|
   # 管理対象モデル
   config.included_models = %w[
     Facility Aquarium Zoo
+    OrderedImage
   ]
 end

@@ -3,6 +3,9 @@ ja:
     id: ID
     type: 種別
     name: 名前
+    position: 順序
+    image: 画像
+    ordered_images: 画像
     created_at: 作成日時
     updated_at: 更新日時
   activerecord:
@@ -10,3 +13,4 @@ ja:
       facility: 施設
       aquarium: 水族館
       zoo: 動物園
+      ordered_image: 画像
