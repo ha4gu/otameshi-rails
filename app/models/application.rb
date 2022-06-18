@@ -2,30 +2,6 @@ class Application < ApplicationRecord
   delegated_type :applicationable, types: Applicationable::TYPES
 
   validates :name, presence: true
-
-  rails_admin do
-    object_label_method do
-      :name
-    end
-
-    list do
-      field :id
-      field :name
-      field :created_at
-      field :updated_at
-    end
-
-    show do
-      field :id
-      field :name
-      field :created_at
-      field :updated_at
-    end
-
-    edit do
-      field :name, :string
-    end
-  end
 end
 
 # == Schema Information

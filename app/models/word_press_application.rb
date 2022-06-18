@@ -5,6 +5,11 @@ class WordPressApplication < ApplicationRecord
   validates :wordpress_version, presence: true
 
   rails_admin do
+    navigation_label "アプリケーション"
+    weight 5
+
+    object_label_method :name
+
     list do
       field :id
       field :name

@@ -44,6 +44,6 @@ RailsAdmin.config do |config|
   config.included_models = %w[
     Facility Aquarium Zoo
     OrderedImage
-    Application RailsApplication WordPressApplication
+    RailsApplication WordPressApplication
   ]
 end

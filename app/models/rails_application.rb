@@ -5,6 +5,11 @@ class RailsApplication < ApplicationRecord
   validates :rails_version, presence: true
 
   rails_admin do
+    navigation_label "アプリケーション"
+    weight 4
+
+    object_label_method :name
+
     list do
       field :id
       field :name

@@ -9,6 +9,9 @@ class Facility < ApplicationRecord
   scope :only_zoo, -> { where(type: "Zoo") }
 
   rails_admin do
+    navigation_label "施設"
+    weight 1
+
     object_label_method :name
 
     list do

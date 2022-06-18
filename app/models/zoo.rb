@@ -1,5 +1,8 @@
 class Zoo < Facility
   rails_admin do
+    navigation_label "施設"
+    weight 3
+
     object_label_method :name
 
     list do
