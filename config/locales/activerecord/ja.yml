@@ -15,3 +15,8 @@ ja:
       zoo: 動物園
       ordered_image: 画像
       application: アプリケーション
+      rails_application: Railsアプリケーション
+    attributes:
+      rails_application:
+        ruby_version: Rubyバージョン
+        rails_version: Railsバージョン
