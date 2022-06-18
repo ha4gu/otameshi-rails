@@ -1,4 +1,6 @@
 class RailsApplication < ApplicationRecord
+  include Applicationable
+
   validates :ruby_version, presence: true
   validates :rails_version, presence: true
 
@@ -7,16 +9,12 @@ class RailsApplication < ApplicationRecord
       field :id
       field :ruby_version
       field :rails_version
-      field :created_at
-      field :updated_at
     end
 
     show do
       field :id
       field :ruby_version
       field :rails_version
-      field :created_at
-      field :updated_at
     end
 
     edit do
@@ -33,6 +31,4 @@ end
 #  id            :bigint           not null, primary key
 #  rails_version :string(255)      not null
 #  ruby_version  :string(255)      not null
-#  created_at    :datetime         not null
-#  updated_at    :datetime         not null
 #

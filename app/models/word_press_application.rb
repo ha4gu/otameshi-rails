@@ -1,4 +1,6 @@
 class WordPressApplication < ApplicationRecord
+  include Applicationable
+
   validates :php_version, presence: true
   validates :wordpress_version, presence: true
 
@@ -7,16 +9,12 @@ class WordPressApplication < ApplicationRecord
       field :id
       field :php_version
       field :wordpress_version
-      field :created_at
-      field :updated_at
     end
 
     show do
       field :id
       field :php_version
       field :wordpress_version
-      field :created_at
-      field :updated_at
     end
 
     edit do
@@ -33,6 +31,4 @@ end
 #  id                :bigint           not null, primary key
 #  php_version       :string(255)      not null
 #  wordpress_version :string(255)      not null
-#  created_at        :datetime         not null
-#  updated_at        :datetime         not null
 #
