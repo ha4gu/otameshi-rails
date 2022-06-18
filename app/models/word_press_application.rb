@@ -7,17 +7,28 @@ class WordPressApplication < ApplicationRecord
   rails_admin do
     list do
       field :id
+      field :name
       field :php_version
       field :wordpress_version
+      field :created_at, :timestamp
+      field :updated_at, :timestamp
     end
 
     show do
       field :id
+      field :name
       field :php_version
       field :wordpress_version
+      field :created_at, :timestamp do
+        visible true
+      end
+      field :updated_at, :timestamp do
+        visible true
+      end
     end
 
     edit do
+      field :name, :string
       field :php_version
       field :wordpress_version
     end
