@@ -16,7 +16,11 @@ ja:
       ordered_image: 画像
       application: アプリケーション
       rails_application: Railsアプリケーション
+      word_press_application: WordPressアプリケーション
     attributes:
       rails_application:
         ruby_version: Rubyバージョン
         rails_version: Railsバージョン
+      word_press_application:
+        php_version: PHPバージョン
+        wordpress_version: WordPressバージョン
