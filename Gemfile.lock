@@ -163,7 +163,7 @@ GEM
     rails-i18n (6.0.0)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 7)
-    rails_admin (3.0.0)
+    rails_admin (3.1.0.beta)
       activemodel-serializers-xml (>= 1.0)
       kaminari (>= 0.14, < 2.0)
       nested_form (~> 0.3)
@@ -284,7 +284,7 @@ DEPENDENCIES
   rack-mini-profiler
   rails (~> 6.1.6)
   rails-i18n (~> 6.0)
-  rails_admin
+  rails_admin (= 3.1.0.beta)
   rails_admin-i18n
   rspec-rails
   rubocop

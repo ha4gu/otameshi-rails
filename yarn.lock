@@ -3227,10 +3227,10 @@ qs@6.10.3:
   dependencies:
     side-channel "^1.0.4"
 
-rails_admin@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/rails_admin/-/rails_admin-3.0.0.tgz#ccd9ef204d29e16370b4daba48761073ec0da0f7"
-  integrity sha512-NmtQX/tSbM9DjC56NUrl7L7qEH20wi8EyW80+P7O3aVvp5QX7DUeJzNvRix7sUPQtHgShOsd3gAAcYy/tsQm9g==
+rails_admin@3.1.0-beta:
+  version "3.1.0-beta"
+  resolved "https://registry.yarnpkg.com/rails_admin/-/rails_admin-3.1.0-beta.tgz#96cdbddd1d7069451a41dc42aad2afef95cc8a83"
+  integrity sha512-WouPKHqfbFxSAlmxfzgI8RDA6urmBbQB555fRbjuddlad2Y4hYLnpUZSMP/h7E3Nlx9CYmB59r5cuj/xh2nC+g==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@fortawesome/fontawesome-free" "^5.15.4"
